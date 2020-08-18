@@ -4,11 +4,16 @@
 
 Для редис:
 
-sudo mkdir /opt/redis/data
-sudo mkdir /opt/redis/data/{bases,log}
-
 cd redis
+sudo mkdir data
+sudo mkdir data/{bases,log}
 
 sudo docker-compose up --build
 
 
+Для постгресс:
+
+cd postgresql
+sudo mkdir postgres_data
+
+sudo docker-compose up --build
